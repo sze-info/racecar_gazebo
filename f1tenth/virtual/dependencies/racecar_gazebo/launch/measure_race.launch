@@ -1,0 +1,11 @@
+<launch>
+<!--
+    /ground_truth   nav_msgs/Odometry
+    /cmd_vel        geometry_msgs/Twist
+
+    rosrun racecar_gazebo gazebo_measure.py
+-->
+
+  <node pkg = "racecar_gazebo" type="gazebo_measure.py" name="gazebo_measure_official" output="screen" />
+
+</launch>
