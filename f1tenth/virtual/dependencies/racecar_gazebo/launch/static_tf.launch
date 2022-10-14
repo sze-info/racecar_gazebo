@@ -1,0 +1,56 @@
+<launch>
+  <!-- Note the order ypr instead of the often used rpy -->
+  <node args="0 0 0 00.5 0 0 base_link chassis 50" name="static001" pkg="tf" type="static_transform_publisher"/>
+  <node args="0 0.1 0 0 0 1.5708 chassis left_rear_wheel 50" name="static002" pkg="tf" type="static_transform_publisher"/>
+  <node args="0 -0.1 0 0 0 1.5708 chassis right_rear_wheel 50" name="static003" pkg="tf" type="static_transform_publisher"/>
+  <node args="0 0 0 0 0 1.5708 left_steering_hinge left_front_wheel 50" name="static004" pkg="tf" type="static_transform_publisher"/>
+  <node args="0 0 0 0 0 1.5708 right_steering_hinge right_front_wheel 50" name="static005" pkg="tf" type="static_transform_publisher"/>
+  <node args="0.325 0.1 0 0 1.5708 0 chassis left_steering_hinge 50" name="static006" pkg="tf" type="static_transform_publisher"/>
+  <node args="0.325 -0.1 0 0 1.5708 0 chassis right_steering_hinge 50" name="static007" pkg="tf" type="static_transform_publisher"/>
+  <node args="0.390 0 0.04 0 0 0 chassis zed_camera_link 50" name="static008" pkg="tf" type="static_transform_publisher"/>
+  <node args="0.265 0.0 0.075 0 0 0 chassis laser 50" name="static009" pkg="tf" type="static_transform_publisher"/>
+</launch>
+
+
+
+   <!--
+    <origin xyz="" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="chassis" />
+
+    <origin xyz="0 0.1 0" rpy="1.5708 0 0" />
+    <parent link="chassis" />
+    <child link="left_rear_wheel" />
+    
+    <origin xyz="0 -0.1 0" rpy="1.5708 0 0" />
+    <parent link="chassis" />
+    <child link="right_rear_wheel" />
+
+    <origin xyz="0 0 0" rpy="1.5708 0 0" />
+    <parent link="left_steering_hinge" />
+    <child link="left_front_wheel" />
+
+
+    <origin xyz="0 0 0" rpy="1.5708 0 0" />
+    <parent link="right_steering_hinge" />
+    <child link="right_front_wheel" />
+
+
+    <origin xyz="0.325 0.1 0" rpy="0 1.5708 0" />
+    <parent link="chassis" />
+    <child link="left_steering_hinge" />
+
+
+    <origin xyz="0.325 -0.1 0" rpy="0 1.5708 0" />
+    <parent link="chassis" />
+    <child link="right_steering_hinge" />
+
+    <origin xyz="0.390 0 0.04" rpy="0 0 0"/>
+    <parent link="chassis"/>
+    <child link="zed_camera_link"/>
+
+    <origin xyz="0.265 0.0 0.075" rpy="0 0 0"/>
+    <parent link="chassis" />
+    <child link="laser" />
+
+   -->
