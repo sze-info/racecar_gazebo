@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name="road1">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+
+    <link name="road1">
+      <pose>0 0 0 0 0 0</pose>
+      <visual name="road">
+      <material>
+            <script>
+                <uri>model://road1/materials/scripts</uri>
+                <uri>model://road1/materials/textures</uri>
+                <name>vrc/road</name>
+            </script>
+        </material>  
+        <geometry>
+          <mesh>
+            <uri>model://road1/meshes/RT1_Road.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="road">
+        <geometry>
+          <mesh>
+            <uri>model://road1/meshes/RT1_Road.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+  </model>
+</sdf>

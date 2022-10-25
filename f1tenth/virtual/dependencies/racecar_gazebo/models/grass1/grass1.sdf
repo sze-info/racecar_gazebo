@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name="grass1">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+
+    <link name="grass1">
+      <pose>0 0 0 0 0 0</pose>
+      <visual name="grass">
+           <material>
+            <script>
+                <uri>model://grass1/materials/scripts</uri>
+                <uri>model://grass1/materials/textures</uri>
+                <name>vrc/grass</name>
+            </script>
+        </material>  
+        <geometry>
+          <mesh>
+            <uri>model://grass1/meshes/RT1_Grass.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="grass"> 
+        <geometry>
+          <mesh>
+            <uri>model://grass1/meshes/RT1_Grass.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+  </model>
+</sdf>

@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name="ground">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+
+    <link name="ground">
+      <pose>0 0 0.05 0 0 0</pose>
+      <visual name="ground">
+      <material>
+            <script>
+                <uri>model://road1/materials/scripts</uri>
+                <uri>model://road1/materials/textures</uri>
+                <name>vrc/road</name>
+            </script>
+        </material>  
+        <geometry>
+          <plane>
+            <size>50 100</size>
+          </plane>
+        </geometry>
+      </visual>
+      <collision name="ground">
+        <geometry>
+          <plane>
+            <size>50 100</size>
+          </plane>
+        </geometry>
+      </collision>
+    </link>
+
+  </model>
+</sdf>

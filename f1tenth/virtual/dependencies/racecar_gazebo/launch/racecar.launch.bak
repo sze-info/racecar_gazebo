@@ -7,7 +7,7 @@
 
 <launch>
   <arg         name           = "world_name"
-               default        = "training_track_1"/>
+               default        = "RT1"/>
   <arg         name           = "gui"
                default        = "true"/>
   <arg         name           = "run_camera"
@@ -29,7 +29,7 @@
                args           = "-urdf -param robot_description
                                        -model racecar
                                        -x -9.864
-                                       -y -32.694
+                                       -y -28.694
                                        -z 0.5
                                        -Y 1.3"/>
   <!-- ros_control racecar launch file -->
@@ -42,5 +42,4 @@
                args           = "/vesc/odom
                                  /pf/pose/odom"/>
                                               -->
-  <include     file           = "$(find racecar_gazebo)/launch/measure_race.launch"/>											  
 </launch>
