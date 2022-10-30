@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name="wallr2">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+
+    <link name="wallr2">
+      <pose>0 0 0 0 0 0</pose>
+      <visual name="wallr">
+        <geometry>
+          <mesh>
+            <uri>model://wallr2/meshes/RT2_Wall1.dae</uri>
+            <scale>1.7 1.7 1.7</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="wallr">
+        <geometry>
+          <mesh>
+            <uri>model://wallr2/meshes/RT2_Wall1.dae</uri>
+            <scale>1.7 1.7 1.7</scale>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+  </model>
+</sdf>

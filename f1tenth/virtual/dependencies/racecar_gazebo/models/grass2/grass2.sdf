@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name="grass2">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+
+    <link name="grass2">
+      <pose>0 0 0 0 0 0</pose>
+      <visual name="grass">
+           <material>
+            <script>
+                <uri>model://grass2/materials/scripts</uri>
+                <uri>model://grass2/materials/textures</uri>
+                <name>vrc/grass</name>
+            </script>
+        </material>  
+        <geometry>
+          <mesh>
+            <uri>model://grass2/meshes/RT2_Grass.dae</uri>
+            <scale>1.7 1.7 1.7</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="grass"> 
+        <geometry>
+          <mesh>
+            <uri>model://grass2/meshes/RT2_Grass.dae</uri>
+            <scale>1.7 1.7 1.7</scale>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+  </model>
+</sdf>
