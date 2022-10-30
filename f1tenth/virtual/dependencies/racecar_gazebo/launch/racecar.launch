@@ -42,5 +42,6 @@
                args           = "/vesc/odom
                                  /pf/pose/odom"/>
                                               -->
-  <include     file           = "$(find racecar_gazebo)/launch/measure_race.launch"/>											  
+  <include     file           = "$(find racecar_gazebo)/launch/measure_race.launch"/>
+  <include     file           = "$(find racecar_gazebo)/launch/static_tf.launch"/>											  
 </launch>
