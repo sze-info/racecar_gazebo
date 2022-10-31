@@ -72,5 +72,9 @@
         <uri>model://wallr2</uri>
         <pose frame=''>0 0 0 1.57079632 0 0</pose>
     </include>
+    <include>
+        <uri>model://redline</uri>
+        <pose frame=''>-1.2 6 0.7 0 0 0</pose>
+    </include>
   </world>
 </sdf>
