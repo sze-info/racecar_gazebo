@@ -72,7 +72,8 @@ def ground_truth_callback(data):
                 if first_run_end:      
                     first_run_end = False
                     rospy.loginfo("A verseny vegetert")
-                    rospy.loginfo("<tr><td>%s</td><td>%.3f</td><td>(kesobb)</td><td>%s (versenyen kivul)</td></tr>" % (kozepiskola_id, dist, date.today().strftime("%Y.%m.%.d")))
+                    rospy.loginfo("<tr><td>%s</td><td>%.2f</td><td>(kesobb)</td><td>%s (versenyen kivul)</td></tr>" % (kozepiskola_id, dist, date.today().strftime("%Y.%m.%d")))
+                    rospy.loginfo("%s %.2f (kesobb) %s (versenyen_kivul)" % (kozepiskola_id, dist, date.today().strftime("%Y.%m.%d")))
         else:
             time_since_start = -1.0
             race_info_str.data = "A verseny meg nem indult el (nincs /cmd_vel)"
