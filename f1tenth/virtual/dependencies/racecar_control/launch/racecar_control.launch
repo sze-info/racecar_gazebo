@@ -7,8 +7,11 @@
 
 <launch>
   <!-- Load joint controller configurations from YAML file to parameter server -->
-  <rosparam    file           = "$(find racecar_control)/config/racecar_control.yaml"
-               command        = "load"/>
+  <rosparam file = "$(find racecar_control)/config/racecar_control01.yaml" command= "load"/>
+  <!--
+  <rosparam file = "$(find racecar_control)/config/racecar_control03.yaml" command= "load"/>
+  <rosparam file = "$(find racecar_control)/config/racecar_control02.yaml" command= "load"/>
+  -->
   <!-- load the controllers -->
   <node        name           = "controller_manager"
                pkg            = "controller_manager"

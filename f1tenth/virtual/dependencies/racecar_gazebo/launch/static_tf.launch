@@ -8,6 +8,7 @@
   <node args="0.325 0.1 0 0 1.5708 0 chassis left_steering_hinge 50" name="static006" pkg="tf" type="static_transform_publisher"/>
   <node args="0.325 -0.1 0 0 1.5708 0 chassis right_steering_hinge 50" name="static007" pkg="tf" type="static_transform_publisher"/>
   <node args="0.390 0 0.04 0 0 0 chassis zed_camera_link 50" name="static008" pkg="tf" type="static_transform_publisher"/>
+  <node args="0.0 0.0 0.0 0.0 1.5708 0.0 zed_camera_link camera_link 50" name="static_cam1" pkg="tf" type="static_transform_publisher"/>
   <node args="0.265 0.0 0.075 0 0 0 chassis laser 50" name="static009" pkg="tf" type="static_transform_publisher"/>
 </launch>
 

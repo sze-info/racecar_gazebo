@@ -1,0 +1,8 @@
+<launch>
+    <node name = "odometry_node" pkg = "racecar_control" type = "cmd_vel_from_file.py" output = "screen" >
+        <param name="csv" value="01.csv" />
+        <!--
+        <param name="csv" value="02.csv" />
+        -->
+    </node>
+</launch>
